@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About us</title>
+    <meta name="viewport" content="width=device-width , intial-scale = 1.0 ,maximum-scale=1.0,minimu-scale=1.0">
+    <meta name="og:title" content="Info : About Us">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header ,.about {
+            text-align: center;
+        }
+        main {
+            margin: 4px;
+        }
+        .feed-h {
+            text-align: center;
+        }
+        body {
+            background-color: #f9feff;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(70, 68, 68);
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(70, 68, 68);
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: rgb(37, 116, 161);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #from-feedback {
+            height: 0px;
+            overflow: hidden;
+            transition: 0.6s;
+        }
+        span:hover {
+            font-weight: bold;
+        }
+        span {
+            color: red;
+        }
+
+@keyframes colors {
+            0% {
+                color: royalblue;
+            }
+            10% {
+                color: blue;
+            }
+
+            20% {
+                color: purple;
+            }
+
+            30% {
+                color: #AA336A;
+            }
+            40% {
+                color: purple;
+            }
+            50% {
+                color: #953553;
+            }
+            60% {
+                color: red;
+            }
+            70% {
+                color: darkorange;
+            }
+            80% {
+                color: orange;
+            }
+
+            90% {
+                color: yellow;
+            }
+            100% {
+                color: lightyellow;
+            }
+
+        }
+        .change-color a:link {
+            animation: colors 8s ease-in-out infinite alternate;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <div class="about">
+            <p>
+                This page is cretaed for knowledge and helping people to download notes and availabe books pdf.This page is just createad for improvement of mine web knowledge.
+            </p>
+            <p>
+                If you find it helpful
+                just share this page with your friend and help them too .If you find any bug or any issue with this site just give us a feedback we will try to make it better or improve our site.
+            </p>
+            <div>
+                <p>
+                    you can support us by just sharing our site and giving <span onclick="OpenF()">feedback</span> to us.
+                </p>
+                <address class="change-color"><a class="fa fa-instagram" href="http://www.instagram.com/its_me_rider0/" target="_blank"></a></address>
+            </div>
+        </div>
+
+        <div id="from-feedback">
+            <h2 class="feed-h">FEED BACK FORM</h2>
+            <div class="container">
+                <form action="mailto:info80134@gmail.com">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Mail Id</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="mailid" placeholder="Your mail id..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="country" name="country">
+                                <option value="none">Select Country</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                <option value="russia">Russia</option>
+                                <option value="japan">Japan</option>
+                                <option value="india">India</option>
+                                <option value="china">China</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="feed_back">Feed Back</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    function OpenF() {
+        document.getElementById("from-feedback").style.height = "680px";
+    }
+</script>
+
+</html>
