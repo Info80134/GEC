@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0
+
+}
+@keyframes colors {
+    0% {
+        color: royalblue;
+    }
+    10% {
+        color: blue;
+    }
+
+    20% {
+        color: purple;
+    }
+
+    30% {
+        color: #AA336A;
+    }
+    40% {
+        color: purple;
+    }
+    50% {
+        color: #953553;
+    }
+    60% {
+        color: red;
+    }
+    70% {
+        color: darkorange;
+    }
+    80% {
+        color: orange;
+    }
+
+    90% {
+        color: yellow;
+    }
+    100% {
+        color: lightyellow;
+    }
+
+}
+.change-color a:link{
+    animation: colors 8s ease-in-out infinite alternate;
+}
+.arrange-1{
+    font-size:12px;
+    margin: 6px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.dis-data address a{
+    display: block;
+    margin: 32px;
+    text-align: center;
+}
+.head-de {
+    display: block;
+    height: 190px;
+    border: 1px solid blue;
+    background-color: aqua;
+    margin-bottom: 16px;
+}
+.page-heading h1 {
+    display: block;;
+    margin: -top: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+    cursive;
+    font-family: 'Caramel', cursive;
+    color: purple;
+    font-size: 60px;
+}
+.page-heading h1 emp {
+    color: red;
+    font-size: 70px;
+}
+.navigation {
+    display: block;
+    background-color: lime;
+}
+.navigation .h_bar_nav ul li a {
+    color: red;
+}
+.navigation ul li a {
+    color: #999999;
+}
+.discription {
+    display: block;
+    margin: 8px 12px;
+    padding: 3px;
+    display: inline-block;
+}
+.mining-content {
+    display: block;
+    margin-top: 232px;
+
+}
+@keyframes slide {
+    from {
+        transform: translate(0px,0);
+    }
+    to {
+        transform: translate(-1710px,0);
+    }
+}
+.slider {
+    animation: slide 16s ease infinite alternate;
+}
+
+.slider:hover {
+    animation-play-state: paused;
+}
+.sli-scro {
+    margin: 8px;
+    padding: 0px;
+    height: 250px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+
+    height: 250px;
+
+    max-width: 1800px;
+
+}
+.slider img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.foot {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0px;
+    background-color: lime;
+
+}
+
+.mining_disc{
+    margin: 12px;
+    display: block;
+}
+.download-content{
+    display: block;
+    margin: 12px;
+    margin-top: 28px;
+    padding: 2px;
+}
+.download-content h4{
+    text-align: center;
+}
+.Syear h5{
+    margin:6px;
+    margin-top: 16px;
+    text-align: center;
+}
+.download_2nd{
+    display: grid;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+}
+.books .subjects a {
+    background-color: cyan;
+    border: 1px solid black;
+}
+.subjects {
+    display: grid;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+}
+.units ul li{
+    margin: 12px;
+    
+}
+.units ul li {
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    align-content: center;
+}
+.units{
+    display:block;
+    overflow: hidden;
+    height: 0px;
+}
+.download_2nd a:hover{
+    font-weight: bolder;
+}
+.syallabus ,.notes .subjects a{
+    background-color: aqua;
+    border: 1px solid black;
+}
