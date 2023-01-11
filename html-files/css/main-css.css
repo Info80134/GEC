@@ -227,3 +227,7 @@
 .telegram-links ul li{
     margin: 12px;
 }
+.telegram-links a:hover{
+    color:black;
+    
+}
