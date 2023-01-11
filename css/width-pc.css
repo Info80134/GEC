@@ -15,7 +15,7 @@
         text-align: center;
         height: 50px;
         width: 100%;
-        background-color: green;
+        background-color: skyblue;
         top: 25px;
         margin-bottom: 16px;
     }
@@ -27,7 +27,7 @@
         top: 0px;
         width: 100%;
         height: 30px;
-        background-color: lime;
+        background-color: cyan;
     }
     .h_bar_nav ul li a {
         font-size: 24px;
